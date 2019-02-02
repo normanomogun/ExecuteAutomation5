@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ExecuteAutomation5FrameWork
 {
-    public class Class1
+    public class TextBox : Element
     {
+        public void TypeText(string text)
+        {
+            WebElement.SendKeys(text);
+        }
     }
 }
