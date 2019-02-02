@@ -10,7 +10,6 @@ namespace ExecuteAutomationTests
     [Binding]
     public sealed class Hooks1
     {
-        // For additional details on SpecFlow hooks see http://go.specflow.org/doc-hooks
 
         [BeforeScenario]
         public void BeforeScenario()
@@ -21,7 +20,7 @@ namespace ExecuteAutomationTests
         [AfterScenario]
         public void AfterScenario()
         {
-            //BrowserDriver.ShutDown();
+            BrowserDriver.ShutDown();
         }
     }
 }
